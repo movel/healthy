@@ -1,10 +1,26 @@
+.hero
+    background-position: 100% 100%
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100vh
+    
+.header 
+    position: relative
+    max-width: 1600px
+    width: 100%
+    margin: 0 20px
+    padding-top: 50px
+    +clr
+    
 .logo
     font-size: 27px
     +roboto-light
     color: rgb(51, 51, 51)
     line-height: 1.2
     text-align: left
-    padding: 30px
+    float: left
+    margin: 30px
+    display: inline-block
     &__link
         position: relative
         display: inline-block
@@ -13,5 +29,34 @@
         top: -27px
         left: 50%
         transform: translateX(-50%)
-        text-align: center
-        margin: 0 auto
+        // text-align: center
+        // margin: 0 auto
+
+.nav
+    float: right
+    display: inline-block
+    ul 
+        li 
+            display: inline-block
+            font-size: 15px
+            +roboto-medium
+            color: rgb(51, 51, 51)
+            line-height: 1.2
+            text-align: right
+
+.basket, .menu
+    float: right
+    display: inline-block
+    +clr
+
+.quantity
+    height: 25px
+    width: 25px
+    padding: 6px
+    background-color: #7fbc00
+    border-radius: 100%
+    color: #ffffff
+    border: 2px solid #ffffff
+    font-size: 12px
+    +roboto-medium
+    line-height: 1.2
