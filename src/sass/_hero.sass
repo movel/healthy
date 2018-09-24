@@ -7,18 +7,52 @@
         font-size: 56px
         +roboto-light
         font-weight: 100
-        color: rgb(51, 51, 51)
+        color: #333333
         line-height: 1.2
         text-align: center
     &__text
         display: block
         font-size: 15px
         +roboto-medium
-        color: rgb(51, 51, 51)
+        color: #333333
         line-height: 1.2
         text-align: center
+        margin: 20px 0
+    &__center
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        max-width: 900px
+        width: 100%
+        text-align: center
+        +clr
+    &__social
+        font-size: 1rem
+        position: absolute
+        right: 0
+        top: 50%
+
+.social__icon
+    float: right
+    width: 100%
+    color: #bababa
+    cursor: pointer
+
+.button__download
+    height: 52px
+    width: 161px
+    border-radius: 25px
+    border: 5px solid #77cabe
+    font-size: 16px
+    +roboto-bold
+    color: #444444
+    font-weight: bold
+    line-height: 1.2
+
 
 .font_bold
+    +roboto-bold
     font-weight: 700
 
 .container
@@ -101,3 +135,31 @@
         color: rgb(51, 51, 51)
         line-height: 1.2
         text-align: right
+
+.naturix
+    font-size: 15px
+    +roboto-medium
+    color: #888888
+    line-height: 1.2
+    text-align: left
+    font-weight: bold
+    position: absolute
+    bottom: 50px
+    left: 10%
+    &__organic
+        +roboto-italic
+        font-style: italic
+        color: #79b100
+
+.style
+    margin: 0 auto
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    img 
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        max-width: 100%
