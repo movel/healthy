@@ -1,31 +1,66 @@
 .organic
+    max-width: 1800px
     margin: 0 auto
-    ul  
-        list-style-type: none
+    &__menu
         margin: 0 auto
-        padding: 0
-        overflow: hidden
         text-align: center
-        max-width: 1170px
-        li 
-            float: left
-            margin-right: 20px
-            cursor: pointer
-            a 
+        padding: 0
+        width: 100%
+        +clr
+        ul  
+            list-style-type: none
+            margin: 0 auto
+            padding: 0
+            overflow: hidden
+            text-align: center
+            max-width: 1170px
+            li 
+                float: left
                 display: inline-block
-                text-align: center
-                text-decoration: none
-                font-size: 16px
-                +roboto-medium
-                color: #9f9e9c
-                border-radius: 25px
-                height: 47px
-                width: 180px
-                border: 2px solid #9f9e9c
-                padding: 10px 0
-            a:hover 
-                background-color: #81ba00  
-                color: #ffffff 
+                margin: 0 1.1%
+                cursor: pointer
+                box-sizing: border-box
+                a 
+                    display: inline-block
+                    text-align: center
+                    text-decoration: none
+                    font-size: 16px
+                    +roboto-medium
+                    color: #9f9e9c
+                    border-radius: 25px
+                    height: 47px
+                    width: 180px
+                    border: 2px solid #9f9e9c
+                    padding: 10px 0
+                    box-sizing: border-box
+                a:hover 
+                    background-color: #81ba00  
+                    color: #ffffff 
 
 .banner__allnature
     float: left
+    display: inline-block
+    margin: 0 2.5% 0 2.9%
+    +clr
+
+.products
+    margin: 0 auto
+    padding: 0
+    text-align: center
+    display: inline-block
+    width: 100%
+    +clr
+
+.product
+    box-sizing: border-box
+    width: 15%
+    margin-right: 0.83333333333333333333333333333333%
+    margin-left: 0.83333333333333333333333333333333%
+    float: left
+    +clr
+    &__img
+        max-width: 100%
+        img 
+            max-width: 100%
+            width: 100%
+
