@@ -36,6 +36,7 @@
                 a:hover 
                     background-color: #81ba00  
                     color: #ffffff 
+                    box-shadow: 5px 5px 15px -6px #000000
 
 .banner__allnature
     float: left
@@ -64,7 +65,7 @@
         position: relative
         width: 100%
         height: 350px
-        border-radius: 10px
+        border-radius: 18px
         img 
             position: absolute
             bottom: 0
@@ -73,4 +74,46 @@
             max-width: 100%
             margin: 0 auto
             opacity: 1
+    &__text
+        font-size: 20px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: center
+    &__price
+        font-size: 14px
+        +helvetica
+        color: #7fbb00
+        font-weight: bold
+        line-height: 1.2
+        text-align: center
+    &__likes
+        font-size: 1rem
+        a 
+            color: #dedede
+
+.marker
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    display: block
+    &__new, &__sale
+        height: 25px
+        width: 70px
+        border-radius: 13px
+        font-size: 11px
+        display: inline-block
+        +helvetica
+        color: #ffffff
+        font-weight: bold
+        line-height: 1.2
+        text-align: left
+        text-transform: uppercase
+        text-align: center
+        padding: 3px
+        border: 1px solid #ffffff
+    &__new
+        background-color: #92d2a7
+    &__sale
+        background-color: #79d1d6
 
