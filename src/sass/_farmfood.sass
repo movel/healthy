@@ -13,6 +13,20 @@
         top: 27px
         left: 50%
         transform: translateX(-50%)
+    &__about
+        font-size: 12px
+        +roboto-medium
+        letter-spacing: 2px
+        color: #525252
+        line-height: 1.2
+        text-align: center
+    &__text
+        font-size: 16px
+        margin: 25px 0
+        +helvetica
+        color: #525252
+        line-height: 1.8
+        text-align: center
     &__light
         font-size: 40px
         +roboto-light
@@ -30,7 +44,8 @@
     &__decor-left
         position: absolute
         left: 0
-        top: 50px 
+        top: 25%
+        transform: translateY(-25%) 
     &__decor-right
         position: absolute
         right: 0
@@ -44,7 +59,31 @@
 
 .features
     width: 100%
+    margin: 0 auto
 
 .feature
     float: left
     width: 23.076923076923076923076923076923%
+    &__title
+        font-size: 18px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: center
+    &__text
+        font-size: 14px
+        +helvetica
+        color: #525252
+        line-height: 1.5
+        text-align: center
+
+.readmore
+    width: 125px
+    height: 38px
+    background-color: #ffffff
+    font-size: 12px
+    +roboto-medium
+    color: #bac3c3
+    line-height: 1.2
+    text-align: center
+    border-radius: 25px
