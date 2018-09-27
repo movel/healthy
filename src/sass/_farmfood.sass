@@ -1,6 +1,7 @@
 .farmfood
     position: relative
     width: 100%
+    margin-bottom: 200px
     +clr
     &__wrapper
         margin: 0 auto
@@ -46,6 +47,7 @@
         left: 0
         top: 25%
         transform: translateY(-25%) 
+        width: 100%
     &__decor-right
         position: absolute
         right: 0
@@ -53,9 +55,13 @@
         transform: translateY(-50%)
     &__decor-bottom
         position: absolute
-        bottom: -250px
+        bottom: -200px
         left: 50%
         transform: translateX(-50%)
+        img 
+            max-width: 1170px
+            width: 100%
+            text-align: center      
 
 .features
     width: 100%
@@ -64,6 +70,7 @@
 .feature
     float: left
     width: 23.076923076923076923076923076923%
+    +clr
     &__title
         font-size: 18px
         +roboto-medium
@@ -76,6 +83,10 @@
         color: #525252
         line-height: 1.5
         text-align: center
+    &-edge 
+        margin: 200px 0 200px
+    &-center 
+        margin: 70px 0
 
 .readmore
     width: 125px
