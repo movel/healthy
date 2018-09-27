@@ -1,5 +1,6 @@
 .farmfood
     position: relative
+    width: 100%
     +clr
     &__wrapper
         margin: 0 auto
@@ -26,5 +27,24 @@
         text-align: center
         +roboto-light
         font-weight: 900
+    &__decor-left
+        position: absolute
+        left: 0
+        top: 50px 
+    &__decor-right
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+    &__decor-bottom
+        position: absolute
+        bottom: -250px
+        left: 50%
+        transform: translateX(-50%)
 
-.farmfood
+.features
+    width: 100%
+
+.feature
+    float: left
+    width: 23.076923076923076923076923076923%
