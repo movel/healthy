@@ -2,19 +2,22 @@
     margin: 0 auto
     max-width: 1170px
     box-sizing: border-box
+    &__one, &__two
+        margin: 50px auto
+        +clr
+    &__one
+        .ourproduct
+            // 30px / 1170px
+            margin-right: 2.5641025641025641025641025641026%
+    &__two
+        .ourproduct
+            // 30px / 1170px
+            margin-left: 2.5641025641025641025641025641026%
 
-.ourproduct__one, .ourproduct__two
-    margin: 50px auto
-    +clr
-
-.one
-    +clr
-    &__item
-        float: left
-        // 170px / 1170px = 
-        width: 14.529914529914529914529914529915%
-        // 30px / 1170px
-        margin-right: 2.5641025641025641025641025641026%
+.ourproduct
+    float: left
+    // 170px / 1170px = 
+    width: 14.529914529914529914529914529915%
     &__descript
         float: left
         // 570px / 1170px
@@ -30,36 +33,9 @@
         +helvetica-oblique
         color: #7fb900
         line-height: 1.2
-        text-align: center
+        text-align: center        
 
-.two
-    +clr
-    &__item
-        float: left
-        // 170px / 1170px = 
-        width: 14.529914529914529914529914529915%
-        // 30px / 1170px
-        margin-left: 2.5641025641025641025641025641026%
-    &__descript
-        float: left
-        // 570px / 1170px
-        width: 48.717948717948717948717948717949%
-        margin-left: 0
-    &__title
-        font-size: 24px
-        +roboto-medium
-        color: #525252
-        line-height: 1.2
-        text-align: center
-    &__items
-        font-size: 13px
-        +helvetica-oblique
-        color: #7fb900
-        line-height: 1.2
-        text-align: center
-        
-
-.descript
+.ourdescript
     &__about
         font-size: 12px
         +roboto-medium
@@ -67,6 +43,8 @@
         line-height: 1.2
         text-align: left
     &__title
+        margin-top: 30px
+        margin-bottom: 30px
         font-size: 24px
         +roboto-medium
         color: #525252
