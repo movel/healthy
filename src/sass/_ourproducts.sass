@@ -9,25 +9,39 @@
         .ourproduct
             // 30px / 1170px
             margin-right: 2.5641025641025641025641025641026%
+            &__descript
+                padding-left: 30px
     &__two
         .ourproduct
             // 30px / 1170px
             margin-left: 2.5641025641025641025641025641026%
+            &__descript
+                padding-right: 30px
 
 .ourproduct
     float: left
     // 170px / 1170px = 
     width: 14.529914529914529914529914529915%
+    +clr
     &__descript
         float: left
         // 570px / 1170px
         width: 48.717948717948717948717948717949%
+        +clr
+    &__logo
+        text-align: center
+    &__line
+        width: 40px
+        height: 5px
+        margin: 15px auto
+        border-top: 3px solid #eeeeee
     &__title
         font-size: 18px
         +roboto-medium
         color: #525252
         line-height: 1.2
         text-align: center
+        margin: 10px auto
     &__items
         font-size: 13px
         +helvetica-oblique
