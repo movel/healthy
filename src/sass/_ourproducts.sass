@@ -3,17 +3,78 @@
     max-width: 1170px
     box-sizing: border-box
 
-.ourproduct
-    float: left
-    // 170px / 1170px = 
-    width: 14.529914529914529914529914529915%
-    &__one
+.ourproduct__one, .ourproduct__two
+    margin: 50px auto
+    +clr
+
+.one
+    +clr
+    &__item
+        float: left
+        // 170px / 1170px = 
+        width: 14.529914529914529914529914529915%
         // 30px / 1170px
         margin-right: 2.5641025641025641025641025641026%
-    &__two
+    &__descript
+        float: left
+        // 570px / 1170px
+        width: 48.717948717948717948717948717949%
+    &__title
+        font-size: 18px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: center
+    &__items
+        font-size: 13px
+        +helvetica-oblique
+        color: #7fb900
+        line-height: 1.2
+        text-align: center
+
+.two
+    +clr
+    &__item
+        float: left
+        // 170px / 1170px = 
+        width: 14.529914529914529914529914529915%
         // 30px / 1170px
         margin-left: 2.5641025641025641025641025641026%
     &__descript
         float: left
         // 570px / 1170px
         width: 48.717948717948717948717948717949%
+        margin-left: 0
+    &__title
+        font-size: 24px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: center
+    &__items
+        font-size: 13px
+        +helvetica-oblique
+        color: #7fb900
+        line-height: 1.2
+        text-align: center
+        
+
+.descript
+    &__about
+        font-size: 12px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: left
+    &__title
+        font-size: 24px
+        +roboto-medium
+        color: #525252
+        line-height: 1.3
+        text-align: left
+    &__text
+        font-size: 16px
+        +helvetica
+        color: #525252
+        line-height: 1.8
+        text-align: left
