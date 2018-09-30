@@ -3,8 +3,38 @@
     margin: 0 auto
     text-align: center
     +clr
+    &__menu
+        margin: 0 auto
+        padding: 25px 0
+        text-align: center
+        max-width: 800px
+        width: 100%
+        +clr
+        ul 
+            margin: 20px auto
+            text-align: center
+            li  
+                height: 30px 
+                float: left
+                display: inline-block 
+                margin: 0 10px 
+                +clr           
+                a 
+                    font-size: 14px
+                    padding: 10px
+                    +roboto-medium
+                    color: #9f9e9b
+                    line-height: 1.2
+                    text-align: center
+                    border: 1px solid #9f9e9b
+                    border-radius: 20px
+                a:hover 
+                    background-color: #7fbc00  
+                    color: #ffffff 
+                    box-shadow: 5px 5px 15px -6px #000000
     &__row   
-        margin: 50px auto 
+        margin: 0 auto 
+        margin-top: 50px
         +clr
         .product
             width: 23.076923076923076923076923076923%
@@ -39,3 +69,15 @@
         top: -30px
         left: 50%
         transform: translateX(-50%)
+
+.organic_fresh_food
+    position: relative
+    img 
+        position: absolute
+        top: 75px
+        left: 75px
+        width: 50%
+
+.none
+    display: none
+    
