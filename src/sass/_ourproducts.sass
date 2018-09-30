@@ -1,9 +1,11 @@
 .ourproducts
-    margin: 0 auto
+    margin: 50px auto
     max-width: 1170px
     box-sizing: border-box
+    +clr
     &__one, &__two
-        margin: 50px auto
+        margin: 0 auto
+        margin-top: 50px
         +clr
     &__one
         .ourproduct
@@ -11,6 +13,7 @@
             margin-right: 2.5641025641025641025641025641026%
             &__descript
                 padding-left: 30px
+
     &__two
         .ourproduct
             // 30px / 1170px
@@ -22,6 +25,7 @@
     float: left
     // 170px / 1170px = 
     width: 14.529914529914529914529914529915%
+    height: 300px
     +clr
     &__descript
         float: left
@@ -30,6 +34,11 @@
         +clr
     &__logo
         text-align: center
+        width: 100%
+        height: 175px
+        img 
+            max-width: 100%
+            margin: 0 auto
     &__line
         width: 40px
         height: 5px
@@ -50,6 +59,7 @@
         text-align: center        
 
 .ourdescript
+    +clr
     &__about
         font-size: 12px
         +roboto-medium
