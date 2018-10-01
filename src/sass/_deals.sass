@@ -51,12 +51,33 @@
             color: #525252
             line-height: 1.8
             text-align: left
-    &__likes
-        float: left
-        width: 100%
+    &__row
+        height: 370px
+    &__menu
+        margin: 0 auto
+        margin-top: 50px
+        width: 130px
+        ul 
+            li 
+
+                a 
+                    margin: 0 3px
+                    width: 26px
+                    height: 26px
+                    padding: 3px
+                    text-align: center
+                    float: left
+                    display: inline-block
+                    color: #dedede
+                    font-size: 1rem
+                    background-color: #ffffff
+                    border-radius: 50%
+                a:hover 
+                    background-color: #90d3a6
+                    color: #ffffff
 
 .times
-    margin: 0 auto
+    margin: 30px auto
     text-align: center
     width: 100%
     .time 
@@ -89,3 +110,78 @@
             font-weight: bold
             line-height: 0.8
             text-align: center
+
+.deal 
+    background-color: #ffffff
+    width: 48.717948717948717948717948717949%
+    height: 252px
+    border-radius: 15px
+    +clr
+    &__part1
+        float: left
+        margin-right: 2.5641025641025641025641025641026%
+        +clr
+    &__part2
+        float: right
+        +clr
+    &__likes
+        width: 60px
+        float: left
+        display: inline-block
+        a 
+            float: left
+            width: 100%
+            height: 78px
+            text-align: center
+            padding: 20px
+            font-size: 1rem
+            color: #dedede
+            border-right: 2px solid #dedede
+            +clr
+    &__body
+        float: left
+        display: inline-block
+        width: 305px
+        padding-top: 30px
+        padding-left: 30px
+    &__about
+        margin-top: 20px
+        font-size: 10px
+        +roboto-medium
+        color: #a0a0a0
+        line-height: 1.2
+        text-align: left
+        letter-spacing: 3px
+    &__name
+        margin-top: 20px
+        font-size: 30px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: left
+    &__text
+        margin-top: 15px
+        font-size: 14px
+        +helvetica
+        color: #525252
+        line-height: 1.8
+        text-align: left
+    &__price
+        margin-top: 15px
+        font-size: 14px
+        +helvetica
+        color: #7fba00
+        font-weight: bold
+        line-height: 1.2
+        text-align: left
+    &__img
+        float: left
+        display: inline-block
+        width: 205px
+        height: 270px
+        +clr
+
+.old_price
+    display: inline-block
+    color: #dedede
+    text-decoration: line-through
