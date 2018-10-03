@@ -4,6 +4,95 @@
         max-width: 1170px
         margin: 0 auto
         text-align: center
+        +clr
     &__part1
         float: left
         width: 31.623931623931623931623931623932%
+        margin-right: 2.5641025641025641025641025641026%
+        +clr
+    &__part1:nth-child(3n+3)
+        margin-right: 0
+        float: right
+        +clr
+    &__about
+        font-size: 10px
+        +roboto-medium
+        color: #9f9f9f
+        line-height: 1.2
+        text-align: left
+        letter-spacing: 2px
+        +clr
+    &__top
+        margin: 10px 0 30px 0
+        +clr
+    &__title
+        float: left
+        display: inline-block
+        font-size: 18px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: left
+        +clr
+    &__buttons
+        height: 27px
+        width: 74px
+        border: 2px solid #dedede
+        border-radius: 40px
+        font-size: 1rem
+        float: right
+        +clr
+        .left, .right
+            margin: 0
+            padding: 0
+            color: #525252
+            display: inline-block
+            line-height: 1
+            +clr
+            .fa-long-arrow-alt-left, .fa-long-arrow-alt-right 
+                font-size: 1rem
+
+.cart
+    border: 2px solid #dedede
+    border-radius: 10px
+    // height: 120px
+    margin-top: 30px
+    line-height: 1
+    padding: 0
+    box-sizing: border-box
+    +clr
+    &__img
+        float: left
+        // width: 110px
+        text-align: left
+        display: inline-block
+        padding: 3px
+        +clr
+    &__descript
+        float: left
+        display: inline-block
+        height: 160px
+        padding-left: 10px
+        +clr
+    &__title
+        margin-top: 20px
+        font-size: 18px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: left
+        +clr
+    &__dash
+        width: 30px
+        margin-top: 20px
+        border: 1px solid #dedede
+        +clr
+    &__price
+        margin-top: 15px
+        font-size: 14px
+        +helvetica
+        color: #7fbb00
+        font-weight: bold
+        line-height: 1.2
+        text-align: left
+        +clr
