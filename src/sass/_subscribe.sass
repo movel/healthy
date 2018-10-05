@@ -1,9 +1,82 @@
 .subscribe
-    &__button 
+    position: relative
+    margin: 0px auto
+    height: 260px
+    +clr
+    &__wrapper
+        max-width: 1170px
+        margin: 50px auto
+    &__decor-left
+        position: absolute
+        bottom: 0
+        left: 0
+    &__decor-right
+        position: absolute
+        top: -10px
+        right: 0
+    &__label, &__form
+        display: inline-block
+    &__label
+        margin-top: 100px
+        float: left
+        width: 31.623931623931623931623931623932%
+        margin-right: 2.5641025641025641025641025641026%
+    &__form
+        margin-top: 80px
+        float: right
+        width: 65.811965811965811965811965811966%
+    &__about
+        font-size: 12px
+        letter-spacing: 2px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: left
+    &__title
+        font-size: 20px
+        letter-spacing: 2px
+        margin-top: 10px
+        +roboto-medium
+        color: #525252
+        line-height: 1.2
+        text-align: left
+    &__email
+        float: left
+        max-width: 551px
         height: 58px
-        width: 200px
-        background-color: #7cc000
-        color: #ffffff
-        .submit
+        width: 100%
+        input[type='email']
+            height: 100%
+            width: 100%
+            border: none
+            border-radius: 40px
+            padding: 12px 20px
+            font-size: 15px
+            +roboto-medium
+            color: #525252
+            line-height: 1.2
+            text-align: left
+            background-color: #ffffff
+        input[type='email']:placeholder
+            color: #cccccc
+    &__btn
+        button[type=submit]
+            height: 58px
+            width: 200px
             background-color: #7cc000
             color: #ffffff
+            margin-top: 17px
+            padding: 12px 20px
+            border: none
+            border-radius: 40px
+            font-size: 17px
+            +roboto-medium
+            cursor: pointer
+            float: right
+            .fa-long-arrow-alt-right 
+                margin-left: 10px
+        button:hover
+            background-color: #45a049
+            
+
+
