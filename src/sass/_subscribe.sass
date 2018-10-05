@@ -1,18 +1,25 @@
 .subscribe
     position: relative
-    margin: 0px auto
-    height: 260px
+    margin: 0px auto  
+    z-index: 900  
     +clr
     &__wrapper
         max-width: 1170px
-        margin: 50px auto
+        margin: 0px auto
+        height: 260px
     &__decor-left
         position: absolute
-        bottom: 0
+        margin: 0
         left: 0
+        bottom: 0
+        img 
+            position: absolute
+            margin: 0
+            left: 0
+            bottom: 0
     &__decor-right
         position: absolute
-        top: -10px
+        top: 0px
         right: 0
     &__label, &__form
         display: inline-block
