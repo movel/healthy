@@ -4,15 +4,33 @@
     &__wrapper
         margin: 0 auto
         max-width: 1170px
-    &__about
+    &__item
         width: 31.623931623931623931623931623932%
         float: left
+        h1 
+            font-size: 12px
+            +roboto-medium
+            color: #525252
+            line-height: 1.4
+            text-align: left 
+        ul 
+            li 
+                a 
+                    font-size: 10px
+                    +roboto-medium
+                    color: #525252
+                    line-height: 1.4
+                    text-align: left 
     &__text
         font-size: 11px
         +helvetica
         color: #525252
         line-height: 1.5
         text-align: left
+    &__bottom
+        margin: 0 auto
+        text-align: center
+        max-width: 1170px
 
 .contact
     font-size: 15px
@@ -31,3 +49,37 @@
 .location
     a 
         color: #84c400
+
+
+.footer__bottom
+    font-size: 15px
+    font-family: "Myriad Pro"
+    color: #999999
+    line-height: 1.4
+    text-align: center
+    .allrights
+        float: left
+        width: 30%
+        text-align: left
+        +clr
+    .bottom__menu
+        float: right
+        // width: 70%
+        text-align: right
+        display: inline-block
+        +clr
+        ul 
+            text-align: right
+            li 
+                display: inline-block
+                font-size: 15px
+                +roboto-medium
+                line-height: 1.4
+                text-align: right
+                a 
+                    float: left
+                    color: #545454
+                    text-align: right
+                    margin-right: 10px
+                a:hover 
+                    color: #525252
