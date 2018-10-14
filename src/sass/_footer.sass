@@ -7,6 +7,8 @@
         margin: 0 auto
         max-width: 1170px
         +clr
+        +r(1200)
+            margin: 0 20px
     &__item
         width: 31.623931623931623931623931623932%
         float: left
@@ -30,11 +32,14 @@
             padding: 15px
             float: left
             width: 45.945945945945945945945945945946%
+            +clr
         .information
             margin-right: 8.1081081081081081081081081081081%
+            +r(1200)
+                margin-right: 1%
+                width: 53%
         .instagram
             padding-top: 15px
-            padding-left: 98px
             &__gallery
                 margin-top: 10px
     &__item:nth-child(3n+3)
@@ -95,13 +100,13 @@
         color: #84c400
 
 .gallery__img
+    width: calc((100% - 25px * 3) / 3)
+    margin-right: 10px
+    margin-left: 10px
     float: left
-    width: 80px
-    margin-right: 16px
+    +r(920)
+        width: calc((100% - 25px * 2) / 2)
 
-.gallery__img:nth-child(3n+3)
-    margin-right: 0
-    float: right
 
 .footer__bottom
     margin: 0px auto
@@ -112,6 +117,8 @@
     color: #999999
     line-height: 1.4
     text-align: center
+    +r(1200)
+        margin: 0 20px
     .allrights
         float: left
         width: 30%
