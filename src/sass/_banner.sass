@@ -4,6 +4,8 @@
     &__wrapper
         max-width: 1170px
         margin: 0 auto
+        +r(1200)
+            margin: 0 20px
     
 .shop__now1, .shop__now2
     width: 48.717948717948717948717948717949%
@@ -25,7 +27,9 @@
     top: 0
     left: 25px
     img 
+        position: relative
         width: 75%
+        z-index: 1
 .shop__decor-right
     position: absolute
     top: -20px
@@ -39,11 +43,15 @@
         font-size: 14px
         +roboto-medium
         line-height: 1.2
+        position: relative
+        z-index: 999
     &__cart
         width: 90%
         margin: 0 auto
         padding: 45px 0 45px 30px
         border: 5px solid #ffffff
+        position: relative
+        z-index: 999
     &__kind
         font-size: 40px
         +greatVibes-regular
@@ -75,6 +83,7 @@
         position: absolute
         left: 60px
         bottom: 20px
+        z-index: 9999
 
 .now1
     &__about
