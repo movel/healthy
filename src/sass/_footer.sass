@@ -115,10 +115,22 @@
     font-size: 15px
     font-family: "Myriad Pro", sans-serif
     color: #999999
-    line-height: 1.4
     text-align: center
+    position: relative
     +r(1200)
         margin: 0 20px
+    .bottom
+        position: absolute
+        top: 0
+        transform: translateY(-50%)
+        width: 100%
+    .arrow
+        position: absolute
+        margin-top: -3rem
+        cursor: pointer
+        transition: all .5s
+        &:hover
+            color: rgba(0, 0, 0, 0.5)
     .allrights
         float: left
         width: 30%
@@ -143,5 +155,7 @@
                     color: #545454
                     text-align: right
                     margin-right: 10px
+                    transition: all .5s
+                    +clr
                 a:hover 
                     color: #525252
