@@ -25,13 +25,21 @@
         top: 0px
         right: 0
         z-index: 99
+        +r(500)
+            display: none
     &__label, &__form
         display: inline-block
+        +r(470)
+            width: 100%
     &__label
         margin-top: 100px
         float: left
         width: 31.623931623931623931623931623932%
         margin-right: 2.5641025641025641025641025641026%
+        +r(1000)
+            margin-top: 60px
+        +r(470)
+            margin-top: 10px
     &__form
         margin-top: 80px
         float: right
@@ -39,6 +47,8 @@
         z-index: 9999
         +r(1000)
             margin-top: 20px
+        +r(470)
+            margin-top: 10px
     &__about
         font-size: 12px
         letter-spacing: 2px
@@ -76,6 +86,8 @@
             color: #cccccc
         +r(1000)
             width: 100%
+        +r(470)
+            margin-top: 10px
     &__btn
         max-width: 200px
         width: 30%
@@ -97,8 +109,12 @@
             float: right
             .fa-long-arrow-alt-right 
                 margin-left: 10px
+            +r(470)
+                margin-top: 0px
         button:hover
             background-color: #45a049
         +r(1000)
             width: 100%
             margin-top: 15px
+        +r(470)
+            margin-top: 5px

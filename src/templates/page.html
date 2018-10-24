@@ -4,7 +4,10 @@ title: Index page
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	
+        
+        {# comments #}
+
+     {#
         {% include "_hero.html" %}
         {% include "_organic.html" %}
         {% include "_farmfood.html" %}
@@ -12,10 +15,13 @@ title: Index page
         {% include "_goods.html" %}
         {% include "_deals.html" %}
         {% include "_random.html" %} 
-        {% include "_banner.html" %} 
-        {% include "_subscribe.html" %} 
-        {% include "_testimonials.html" %} 
+      #}
+        {% include "_banner.html" %}
+        {% include "_subscribe.html" %}
+        {% include "_testimonials.html" %}
         {% include "_news.html" %} 
+{#
         {% include "_footer.html" %} 
+      #}
 
 {% endblock %}

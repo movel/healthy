@@ -17,6 +17,8 @@
     &__title
         font-size: 24px
         margin-bottom: 50px
+    +r(800)
+        margin-top: 30px
 
 .new
     float: left
@@ -28,13 +30,20 @@
         float: left
         padding: 10px
         img 
+            max-width: 240px
             width: 100%
             border-radius: 10px
+        +r(500)
+            width: 100%
+            float: none
     &__content
         width: 50.877192982456140350877192982456%
         float: right
         padding-top: 10px
         padding-left: 10px
+        +r(500)
+            width: 100%
+            float: none
     &__date, &__title
         +roboto-medium
         color: #525252
@@ -64,7 +73,13 @@
         font-size: 11px
         +helvetica
         margin-top: 25px
-
+    +r(800)
+        width: 100%
+        float: none
+        margin: 10px auto
+        text-align: center
+    +r(500)
+        margin: 20px auto
         
 .new:nth-child(2n+2) 
     margin-right: 0
