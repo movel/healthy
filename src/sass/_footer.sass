@@ -42,6 +42,10 @@
             padding-top: 15px
             &__gallery
                 margin-top: 10px
+        +r(700)
+            width: 100%
+            float: none
+            margin: 0 auto
     &__item:nth-child(3n+3)
         margin-right: 0
         float: right
@@ -70,7 +74,7 @@
         text-align: left
         +clr
     &__style
-        margin: 0px auto
+        margin: 0 auto
         margin-top: 50px
         position: relative
         text-align: center
@@ -79,7 +83,7 @@
             bottom: 0
             left: 0
             right: 0
-            max-width: 100%        
+            width: 100%
 
 .contact
     font-size: 15px
@@ -129,8 +133,13 @@
         margin-top: -3rem
         cursor: pointer
         transition: all .5s
+        left: 0
+        right: 0
+        width: 100%
         &:hover
             color: rgba(0, 0, 0, 0.5)
+        +r(1400)
+            margin-top: -30px
     .allrights
         float: left
         width: 30%
