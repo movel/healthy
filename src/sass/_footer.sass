@@ -43,12 +43,20 @@
             &__gallery
                 margin-top: 10px
         +r(700)
+            max-width: 400px
             width: 100%
             float: none
-            margin: 0 auto
+            margin: 25px auto
+            +clr
     &__item:nth-child(3n+3)
         margin-right: 0
         float: right
+        +r(700)
+            float: none
+            max-width: 400px
+            width: 100%
+            margin: 0 auto
+            margin-top: 30px
     &__logo
         float: none
         +clr
@@ -128,6 +136,9 @@
         top: 0
         transform: translateY(-50%)
         width: 100%
+        +r(700)
+            position: relative
+            transform: translateY(0%)
     .arrow
         position: absolute
         margin-top: -3rem
@@ -140,11 +151,18 @@
             color: rgba(0, 0, 0, 0.5)
         +r(1400)
             margin-top: -30px
+        +r(700)
+            margin-top: -15px
     .allrights
         float: left
         width: 30%
         text-align: left
         +clr
+        +r(700)
+            float: none
+            width: 100%
+            margin-top: 10px
+            text-align: center
     .bottom__menu
         float: right
         width: 70%
@@ -159,6 +177,9 @@
                 +roboto-medium
                 line-height: 1.4
                 text-align: right
+                +r(700)
+                    display: block
+                    text-align: center
                 a 
                     float: left
                     color: #545454
@@ -166,5 +187,13 @@
                     margin-right: 10px
                     transition: all .5s
                     +clr
+                    +r(700)
+                        float: none
+                        width: 100%
+                        text-align: center
                 a:hover 
                     color: #525252
+        +r(700)
+            float: none
+            width: 100%
+            margin-top: 10%
