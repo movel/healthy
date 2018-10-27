@@ -3,7 +3,10 @@
     margin: 0 auto
     +clr
     +r(1200)
-        margin: 0 20px
+        margin: 0 auto
+        max-width: 800px
+        display: block
+        text-align: center
     &__menu
         margin: 0 auto
         text-align: center
@@ -58,10 +61,15 @@
     display: inline-block
     width: 100%
     +clr
+    +r(1140)
+        display: block
+        max-width: 700px
 
 .product
     box-sizing: border-box
+    max-width: 220px
     width: 15%
+    height: 500px
     margin-right: 0.83333333333333333333333333333333%
     margin-left: 0.83333333333333333333333333333333%
     float: left
@@ -69,19 +77,20 @@
     border: 1px solid #eeeeee
     border-radius: 20px
     +clr
+    +r(1140)
+        width: 30%
+        margin-top: 20px
     +r(400)
         display: block
         float: none
-        max-width: 220px
         width: 100%
-        // text-align: center
         margin: 0 auto
         margin-top: 20px
     &__img
         background-color: #f7f6f2
         position: relative
         width: 100%
-        height: 350px
+        height: 370px
         border-radius: 18px
         img 
             position: absolute
@@ -131,7 +140,7 @@
         padding: 3px
         border: 1px solid #ffffff
         +r(400)
-            margin-top: 20px
+            margin-top: 10px
     &__new
         background-color: #92d2a7
     &__sale
@@ -149,7 +158,7 @@
     display: block
     .page 
         height: 5px
-        width: 25%
+        width: 15%
         background-color: #f1f1f1
         margin: 0
         padding: 0
