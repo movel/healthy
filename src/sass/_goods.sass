@@ -17,7 +17,7 @@
                 height: 30px 
                 float: left
                 display: inline-block 
-                margin: 0 10px 
+                margin: 10px 10px 
                 +clr           
                 a 
                     font-size: 14px
@@ -37,7 +37,25 @@
         margin-top: 50px
         +clr
         .product
+            max-width: 300px
             width: 23.076923076923076923076923076923%
+            +r(850)
+                width: 46.153846153846153846153846153846%
+                max-width: 220px
+                margin-left: 20px
+                margin-right: 20px
+            +r(550)
+                margin: 30px auto
+                display: block
+                float: none
+                max-width: 220px
+                width: 100%
+        +r(850)
+            width: 550px
+        +r(550)
+            width: 100%
+            margin: 0 auto
+            display: block
     &__about
         font-size: 12px
         +roboto-medium
@@ -60,6 +78,10 @@
         h1 
             font-size: 40px
             padding: 5px
+            +r(480)
+                font-size: 24px
+                padding: 10px
+                line-height: 2
     &__light
         font-weight: 100
     &__bold
