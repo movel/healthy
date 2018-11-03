@@ -19,6 +19,8 @@
     &__bottom
         margin: 0 auto
         margin-top: 50px
+        +r(570)
+            display: none
     &__style
         margin: 0 auto
         padding: 60px
@@ -84,10 +86,14 @@
     &__row
         height: 370px
     &__menu
+        display: block
+        position: relative
         margin: 0 auto
         margin-top: 50px
         width: 130px
-        +clr 
+        +clr
+        +r(570)
+            display: none
         ul 
             li 
                 width: 33.333333333333333333333333333333%
@@ -113,6 +119,8 @@
         top: 85%
         transform: translateY(-85%) 
         width: 100%
+        +r(570)
+            display: none
     &__decor-right
         position: absolute
         right: 0
@@ -172,12 +180,18 @@
             float: none
             margin: 0 auto
             margin-bottom: 100px
+        +r(570)
+            height: 400px
+            margin-bottom: 200px
     &__part2
         float: right
         +clr
         +r(1200)
             float: none
             margin: 0 auto
+        +r(570)
+            height: 400px
+            margin-bottom: 200px
     &__likes
         width: 60px
         float: left
@@ -192,12 +206,21 @@
             color: #dedede
             border-right: 2px solid #dedede
             +clr
+            +r(570)
+                width: 33%
+                height: 30px
+                padding: 0
+                display: inline-block
+        +r(570)
+            width: 100%
     &__body
         float: left
         display: inline-block
         width: 50%
         padding-top: 30px
         padding-left: 30px
+        +r(570)
+            width: 100%
     &__about
         margin-top: 20px
         font-size: 10px
@@ -229,6 +252,7 @@
         line-height: 1.2
         text-align: left
     &__img
+        position: relative
         float: left
         display: inline-block
         width: 205px
@@ -236,6 +260,8 @@
         +clr
         img 
             width: 100%
+        +r(570)
+            float: right
 
 .old_price
     display: inline-block

@@ -2,7 +2,7 @@
     +clr
     &__wrapper
         max-width: 1170px
-        margin: 0 auto
+        margin: 30px auto
         text-align: center
         +clr
         +r(1200)
@@ -12,10 +12,24 @@
         width: 31.623931623931623931623931623932%
         margin-right: 2.5641025641025641025641025641026%
         +clr
+        +r(1100)
+            max-width: 374px
+            width: 100%
+            float: none
+            display: block
+            margin: 0 auto
+            margin-top: 50px
     &__part1:nth-child(3n+3)
         margin-right: 0
         float: right
         +clr
+        +r(1100)
+            max-width: 374px
+            width: 100%
+            float: none
+            display: block
+            margin: 0 auto
+            margin-top: 50px
     &__about
         font-size: 10px
         +roboto-medium
@@ -66,17 +80,24 @@
     +clr
     &__img
         float: left
-        // width: 110px
         text-align: left
         display: inline-block
         padding: 3px
         +clr
+        +r(380)
+            width: 30%
+        img 
+            +r(380)
+                width: 100%
     &__descript
         float: left
         display: inline-block
         height: 160px
         padding-left: 10px
         +clr
+        +r(380)
+            float: right
+            width: 70%
     &__title
         margin-top: 20px
         font-size: 18px
