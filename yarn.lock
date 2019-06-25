@@ -967,6 +967,11 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
+bluebird@^3.1.1:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.5.tgz#a8d0afd73251effbbd5fe384a77d73003c17a71f"
+  integrity sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
+
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.8"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
@@ -1577,9 +1582,12 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
 
-consolidate@~0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/consolidate/-/consolidate-0.10.0.tgz#81f1a6ceba1247df9cef7a261ce527c2ce538f7a"
+consolidate@~0.14.0:
+  version "0.14.5"
+  resolved "https://registry.yarnpkg.com/consolidate/-/consolidate-0.14.5.tgz#5a25047bc76f73072667c8cb52c989888f494c63"
+  integrity sha1-WiUEe8dvcwcmZ8jLUsmJiI9JTGM=
+  dependencies:
+    bluebird "^3.1.1"
 
 constants-browserify@^1.0.0:
   version "1.0.0"
@@ -2958,11 +2966,12 @@ gulp-cheerio@^0.6.2:
     plugin-error "^0.1.2"
     through2 "^0.6.3"
 
-gulp-consolidate@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/gulp-consolidate/-/gulp-consolidate-0.1.2.tgz#bbe28dce3b78db8ccbb4452650d7d868c94f66a3"
+gulp-consolidate@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/gulp-consolidate/-/gulp-consolidate-0.2.0.tgz#ef373b6134af31b0f8c51f5eb55faa0bd754df52"
+  integrity sha1-7zc7YTSvMbD4xR9etV+qC9dU31I=
   dependencies:
-    consolidate "~0.10.0"
+    consolidate "~0.14.0"
     map-stream "0.0.4"
 
 gulp-filter@^4.0.0:
